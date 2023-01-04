@@ -1,6 +1,5 @@
-import $ from './libra/lib.js';
+import $ from "jQuery";
 
-$('.btn').on('click', (e)=>{
-    e.preventDefault();
-    $('.title').fadeToggle(500);
+$('li').each((i, el) => {
+    console.log($(el).html());
 });
