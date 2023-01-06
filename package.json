@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ivamish/start-tamplate-project-v2.git"
+    "url": "git+https://github.com/ivamish/pay-form.git"
   },
   "author": "ivamish <ivamish051@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ivamish/start-tamplate-project-v2/issues"
+    "url": "https://github.com/ivamish/pay-form/issues"
   },
-  "homepage": "https://github.com/ivamish/start-tamplate-project-v2#readme",
+  "homepage": "https://github.com/ivamish/pay-form#readme",
   "devDependencies": {
     "browser-sync": "^2.27.7",
     "gulp": "^4.0.2",
@@ -36,6 +36,7 @@
     "@babel/preset-env": "^7.16.11",
     "babel-loader": "^8.2.3",
     "core-js": "^3.21.1",
+    "inputmask": "^5.0.8-beta.72",
     "jquery": "^3.6.3"
   },
   "keywords": [

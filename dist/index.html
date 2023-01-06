@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css?_v=20230105230449">
+    <link rel="stylesheet" href="css/style.css?_v=20230106234139">
     <title>Форма оплаты</title>
 </head>
 <body>
@@ -64,7 +64,7 @@
                 </div>
             </div>
             <div class="total">Итого: <span>3650</span> р.</div>
-            <button class="btn">Оформить</button>
+            <button class="btn btn-pay">Оформить</button>
         </div>
     </section>
 
@@ -104,12 +104,12 @@
 
             <div class="modal__field">
                 <label for="modal-name" class="modal__label">Имя</label>
-                <input id="modal-name" type="text" class="modal__input">
+                <input id="modal-name" type="text" class="modal__input modal-name">
             </div>
 
             <div class="modal__field">
                 <label for="modal-lastname" class="modal__label">Фамилия</label>
-                <input id="modal-lastname" type="text" class="modal__input">
+                <input id="modal-lastname" type="text" class="modal__input modal-name">
             </div>
 
             <div class="modal__field">
@@ -122,10 +122,14 @@
                 <input id="modal-mail" type="text" class="modal__input">
             </div>
 
+            <div class="modal__alert">
+                Проверьте правильность введённых данных
+            </div>
+
             <button type="submit" class="btn modal__btn">Готово</button>
         </form>
     </div>
 </div>
-    <script src="js/script.js?_v=20230105230449"></script>
+    <script src="js/script.js?_v=20230106234139"></script>
 </body>
 </html>

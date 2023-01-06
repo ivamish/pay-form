@@ -5,9 +5,20 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.49);
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
+
+    &__alert {
+        display: none;
+        margin-top: 35px;
+        color: rgb(255, 0, 0);
+        transition: all .5s;
+        &--show {
+            display: block;
+        }
+    }
+
     &__content {
         padding: 39px 159px 68px 97px;
         background-color: #fff;
@@ -43,6 +54,9 @@
         &:focus {
             box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.55);
         }
+        &--error {
+            box-shadow: 0px 0px 15px 6px rgba(228, 4, 4, 0.808);
+        }
     }
     &__label {
         position: absolute;
@@ -57,5 +71,10 @@
         font-size: 16px;
         line-height: 15px;
         color: rgba(0, 0, 0, 0.75);
+    }
+    &__btn {
+        &:disabled {
+            opacity: .4;
+        }
     }
 }
