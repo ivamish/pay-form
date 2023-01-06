@@ -4,16 +4,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css?_v=20230105230449">
+    <title>Форма оплаты</title>
 </head>
 <body>
-    
-    <li>1</li>
-    <li>1</li>
-    <li>1</li>
-    <li>1</li>
-    <li>1</li>
+<div class="wrap">
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <a href="" class="header__nav-link">Главная</a>
+                <a href="" class="header__nav-link">Каталог</a>
+                <a href="" class="header__nav-link">Новинки</a>
+                <a href="" class="header__nav-link">О нас</a>
+                <a href="" class="header__nav-link">Контакты</a>
+            </nav>
+        </div>
+    </header>
 
-    <script src="js/script.js?_v=20230104185203"></script>
+    <section class="content">
+        <div class="container">
+            <h1 class="title">Оформление заказа</h1>
+            <h2 class="subtitle">У вас в корзине:</h2>
+            <div class="items">
+                <div class="item">
+                    <div class="item__num item__text">1</div>
+                    <div class="item__img"><img src="img/1.png" alt="1"></div>
+                    <div class="item__title item__text">Товар # 1</div>
+                    <div class="item__price item__text">2500 р.</div>
+                    <div class="item__count item__text"><span>2</span> шт.</div>
+                    <div class="item__interface">
+                        <div class="item__plus"><img src="img/plus.png" alt="plus"></div>
+                        <div class="item__minus"><img src="img/minus.png" alt="minus"></div>
+                        <div class="item__trash"><img src="img/trash.png" alt="trash"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__num item__text">2</div>
+                    <div class="item__img"><img src="img/2.png" alt="2"></div>
+                    <div class="item__title item__text">Товар # 2</div>
+                    <div class="item__price item__text">1000 р.</div>
+                    <div class="item__count item__text"><span>1</span> шт.</div>
+                    <div class="item__interface">
+                        <div class="item__plus"><img src="img/plus.png" alt="plus"></div>
+                        <div class="item__minus"><img src="img/minus.png" alt="minus"></div>
+                        <div class="item__trash"><img src="img/trash.png" alt="trash"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__num item__text">3</div>
+                    <div class="item__img"><img src="img/3.png" alt="3"></div>
+                    <div class="item__title item__text">Товар # 3</div>
+                    <div class="item__price item__text">1500 р.</div>
+                    <div class="item__count item__text"><span>3</span> шт.</div>
+                    <div class="item__interface">
+                        <div class="item__plus"><img src="img/plus.png" alt="plus"></div>
+                        <div class="item__minus"><img src="img/minus.png" alt="minus"></div>
+                        <div class="item__trash"><img src="img/trash.png" alt="trash"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="total">Итого: <span>3650</span> р.</div>
+            <button class="btn">Оформить</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__flex">
+                <div class="footer__main">
+                    <div class="footer__logo">logo</div>
+                    <div class="footer__descr">
+                        Тестовая верстка
+                        <br>
+                        для трудоустройства
+                    </div>
+                </div>
+                <nav class="footer__nav">
+                    <div class="footer__nav-left">
+                        <a href="" class="footer__nav-link">Главная</a>
+                        <a href="" class="footer__nav-link">Каталог</a>
+                    </div>
+                    <div class="footer__nav-mid">
+                        <a href="" class="footer__nav-link">Новинки</a>
+                    </div>
+                    <div class="footer__nav-right">
+                        <a href="" class="footer__nav-link">О нас</a>
+                        <a href="" class="footer__nav-link">Контакты</a>
+                    </div>
+                </nav>
+                <div class="footer__year">2023</div>
+            </div>
+        </div>
+    </footer>
+</div>
+<div class="modal">
+    <div class="modal__content">
+        <h2 class="modal__title">Заполните данные о себе:</h2>
+        <form action="post" class="modal__form">
+
+            <div class="modal__field">
+                <label for="modal-name" class="modal__label">Имя</label>
+                <input id="modal-name" type="text" class="modal__input">
+            </div>
+
+            <div class="modal__field">
+                <label for="modal-lastname" class="modal__label">Фамилия</label>
+                <input id="modal-lastname" type="text" class="modal__input">
+            </div>
+
+            <div class="modal__field">
+                <label for="modal-phone" class="modal__label">Телефон</label>
+                <input id="modal-phone" type="tel" class="modal__input">
+            </div>
+
+            <div class="modal__field">
+                <label for="modal-mail" class="modal__label">E-mail</label>
+                <input id="modal-mail" type="text" class="modal__input">
+            </div>
+
+            <button type="submit" class="btn modal__btn">Готово</button>
+        </form>
+    </div>
+</div>
+    <script src="js/script.js?_v=20230105230449"></script>
 </body>
 </html>

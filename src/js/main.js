@@ -1,5 +1,5 @@
 import $ from "jQuery";
+import Inputmask from "inputmask";
 
-$('li').each((i, el) => {
-    console.log($(el).html());
-});
+const phoneInput = document.getElementById('modal-phone');
+Inputmask();
